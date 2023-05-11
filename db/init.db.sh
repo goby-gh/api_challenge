@@ -16,5 +16,8 @@ psql -v ON_ERROR_STOP=1 --username postgres --dbname habitat <<-EOSQL
   COMMIT;
 EOSQL
 
-# Run the migration file 
+# Run a test file
+psql -v ON_ERROR_STOP=1 --username postgres --dbname habitat -f /tmp/test.sql
+
+# Run the migration file
 psql -v ON_ERROR_STOP=1 --username postgres --dbname habitat -f /tmp/migrations.sql

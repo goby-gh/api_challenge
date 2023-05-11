@@ -34,7 +34,11 @@ app = create_app(Config)
 if __name__ == '__main__':
     # Read the auction result (via the API)
     results = fetch_todays_results()
+    print(f"Fetched {len(results)} auction results.")
 
     # Save the results
-    for res in results:
-        pass # todo after migration
+    with app.app_context():
+        for res in results:
+            ar = AuctionResult.from_json(res)
+            ar.save()
+            print(f"Saved {ar}")
