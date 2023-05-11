@@ -3,8 +3,6 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-bulk_data_schema = 'bulk_data'
-
 class AuctionResult(db.Model):
     __tablename__ = 'auction_results'
     __table_args__ = {'schema': 'noah' }
@@ -34,7 +32,7 @@ class AuctionResult(db.Model):
     dc_full_text = db.Column(db.Text, nullable=True)
     efa = db.Column(db.Date, nullable=True)
     def __str__(self):
-        return f"Address<{self.address_id}>"
+        return f"AuctionResult<{self.auction_result_id}>"
 # Notes:
 # Fields from the API:
 # fields = [

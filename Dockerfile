@@ -15,8 +15,8 @@ RUN apt-get update && apt-get -y install g++ libpq-dev gcc unixodbc unixodbc-dev
 RUN pip install --upgrade pip
 
 # install project reqs
-# COPY ./requirements.txt ${DIR}/requirements.txt
-# RUN pip install -r requirements.txt
+COPY ./requirements.txt ${DIR}/requirements.txt
+RUN pip install -r requirements.txt
 
 # copy project
 COPY . $DIR
