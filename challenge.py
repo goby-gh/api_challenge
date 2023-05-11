@@ -31,6 +31,7 @@ def fetch_auction_result():
     # curl -L https://data.nationalgrideso.com/backend/datastore/dump/888e5029-f786-41d2-bc15-cbfd1d285e96
     #
     # curl -L https://data.nationalgrideso.com/backend/dataset/aca07dcb-f807-409c-a4ec-da5dc052b8ba/resource/0b8dbc3c-e05e-44a4-b855-7dd1aa079c68/download/dynamic_containment_masterdata.csv
+    pass
 
 def save_current_days_result():
     ''' Save Habitat's current day's result to a local database.
@@ -39,6 +40,7 @@ def save_current_days_result():
         > Also this might not be the only data we get from ESO,
         > so think about your code structure.
     '''
+    pass
 
 '''
 Additional info:
@@ -54,4 +56,6 @@ Additional info:
     >
     > Happy coding
     > Habitat Energy Tech team
-''''
+'''
+
+print("Hello world")
