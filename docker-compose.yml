@@ -7,9 +7,7 @@ services:
     volumes:
       # Path on the host, relative to the Compose file: path on the container
       - ./:/app
-    # Un-comment this entrypoint if you're having issues with
-    # trying to hit the DB before it is ready
-    #entrypoint: ["/app/wait-for-it.sh", "db:5432", "--"]
+    entrypoint: ["/app/wait-for-it.sh", "db:5432", "--"]
     command: ["python", "challenge.py"]
   db:
     build: ./db/

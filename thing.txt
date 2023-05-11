@@ -1,4 +1,0 @@
-start
-resume
-ugh WSL clock bug made my git logs insane
-i resumed at 840pm

@@ -21,5 +21,5 @@ RUN pip install -r requirements.txt
 # copy project
 COPY . $DIR
 
-# ENTRYPOINT ["/app/wait-for-it.sh", "db:5432", "--"]
+ENTRYPOINT ["/app/wait-for-it.sh", "db:5432", "--"]
 CMD ["python", "challenge.py"]

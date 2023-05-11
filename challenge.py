@@ -5,7 +5,8 @@ from api import fetch_todays_results
 from models import db, AuctionResult
 
 # This is SILLY (since this app doesn't serve anything)
-# but its the quickest way I know of to get sqlalch and alembic up and running and I'm working as fast as I can!
+# but its the quickest way I know of to get sqlalch and
+# alembic up and running and I'm working as fast as I can!
 from flask import Flask, request
 from flask_migrate import Migrate
 
