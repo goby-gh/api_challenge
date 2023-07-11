@@ -1,6 +1,6 @@
 requests
 alembic==1.8.1
-Flask==2.2.2
+flask>=2.2.5
 Flask-GraphQL==2.0.1
 Flask-Migrate==3.1.0
 Flask-SQLAlchemy==2.5.1
